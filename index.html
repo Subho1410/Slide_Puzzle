@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2D Puzzle Game</title>
+    <style>
+        #game-board {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .piece {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border: 1px solid black;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            background-color: #e5ff00;
+            cursor: pointer;
+        }
+        .piece:hover {
+            background-color: #02f332;
+        }
+        #game-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #new-game-btn {
+            font-size: 18px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: rgb(2, 2, 2);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #new-game-btn:hover {
+            background-color: #3e8e41;
+        }
+        #scoreboard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2f2f2;
+            height: 50px;
+            padding: 10px;
+            font-size: 24px;
+            border-radius: 5px;
+        }
+        #scoreboard span {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-board"></div>
+    <div id="game-info">
+        <div>Moves: <span id="move-count">0</span></div>
+        <div>Time: <span id="time-counter">0</span></div>
+        <button id="new-game-btn">New Game</button>
+    </div>
+    <div id="scoreboard">Score: <span id="score">0</span></div>
+<script src="script.js"></script> 
+</body>
+</html>
